@@ -1,0 +1,83 @@
+* {
+    font-family: "Parkinsans", sans-serif;
+}
+body {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+div.content {display: grid;}
+div.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+:root {
+    --jp: #e09dc9;
+    --jg: #333333;
+    --dbr: min(0.125dvw, 0.25dvh);
+    --mbr: min(0.375dvw, 0.75dvh);
+}
+div.item-1 {
+    grid-area: item-1;
+    background-color: var(--db);
+}
+div.item-2 {
+    grid-area: item-2;
+    background-image: url('../data/background/2.avif');
+}
+div.item-3 {
+    grid-area: item-3;
+    background-image: url('../data/background/3.avif');
+}
+div.item-4 {
+    grid-area: item-4;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+div.item-5 {
+    grid-area: item-5;
+    background-image: url('../data/background/5.avif');
+}
+div.item-6 {
+    grid-area: item-6;
+    background-image: url('../data/background/6.jpg');
+}
+div.item-7 {
+    grid-area: item-7;
+    background-color: var(--jo);
+    justify-content: center;
+}
+footer {
+    color: white;
+    background-color: var(--jg);
+}
+div.item-visual {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.item-textual:not(div.item-center) {
+    color: white;
+    background-color: var(--jp);
+}
+div.item-center h1 {
+    text-align: center;
+    color: var(--jp);
+}
+h1, h2, p {margin: 0;}
+h1, h2 {font-weight: 500;}
+p {font-weight: 300;}
+button {
+    padding: 0;
+    border-radius: 0;
+    background-color: white;
+    color: var(--jp);
+    border: none;
+    cursor: pointer;
+}

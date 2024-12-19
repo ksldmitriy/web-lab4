@@ -1,0 +1,43 @@
+@media (max-width: 1024px) {
+    body {
+        height: calc(200dvh + 80dvw + 10dvh);
+    }
+    div.content {
+        grid-template-columns: 100%;
+        grid-template-rows: 30dvh repeat(5, 25dvh) 45dvh;  
+        grid-template-areas: 
+        "item-1"
+        "item-2"
+        "item-3"
+        "item-4"
+        "item-5"
+        "item-6"
+        "item-7";
+        gap: 10dvw;
+        width: 80dvw;
+        padding: 10dvw 0;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 10dvh;
+    }
+    div.item-textual {gap: 3dvh;}
+    div.item-textual h1 {font-size: 7dvw;}
+    div.item-textual h2 {font-size: 6dvw;}
+    div.item-textual p {font-size: 3.5dvw;}
+    div.item-textual button {
+        width: 50dvw;
+        height: 5dvh;
+    }
+    div.item-textual:not(div.item-center) {padding: 3dvw;}
+    div.item-center {box-shadow: inset 0 0 0 var(--mbr) var(--jp);}
+    button:active {
+        box-shadow: inset 0 0 0 var(--mbr) white;
+        background-color: var(--jp);
+        color: white;
+    }
+    del {text-decoration-thickness: 0.5dvw;}
+}
